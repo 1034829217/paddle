@@ -1,6 +1,6 @@
 # 基于 PaddlePaddle 实现 HashNet(ICCV2017)
 
-简体中文 | [English](./README_en.md)
+简体中文
 
 ## 一、简介
 

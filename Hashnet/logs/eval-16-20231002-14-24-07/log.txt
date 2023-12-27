@@ -1,0 +1,7 @@
+2023-10-02 14:24:07,867 
+Namespace(alpha=0.1, batch_size=64, bit=16, crop_size=224, data={'train_set': {'list_path': 'data/coco_lite/train.txt', 'batch_size': 64}, 'database': {'list_path': 'data/coco_lite/database.txt', 'batch_size': 64}, 'test': {'list_path': 'data/coco_lite/test.txt', 'batch_size': 64}}, data_path='./datasets/COCO2014/', dataset='coco_lite', de_step=50, debug_steps=50, epoch=150, eval=True, eval_epoch=10, last_epoch=0, learning_rate=0.001, log_path='logs/', model='HashNet', momentum=0.9, num_class=80, num_train=9, optimizer='SGD', output_dir='checkpoints/', pretrained='output/weights_16', resize_size=256, resume=None, seed=2000, step_continuation=20, topK=5000, weight_decay=0.0005)
+2023-10-02 14:24:18,753 ----- Total # of train batch: 1
+2023-10-02 14:24:18,754 ----- Total # of test batch: 1
+2023-10-02 14:24:18,754 ----- Total # of base batch: 1
+2023-10-02 14:24:25,381 ----- Pretrained: Load model state from output/weights_16.pdparams
+2023-10-02 14:24:25,381 ----- Start Validating

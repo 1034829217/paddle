@@ -1,0 +1,6 @@
+2023-10-02 14:10:53,567 
+Namespace(alpha=0.1, batch_size=128, bit=64, crop_size=224, data={'train_set': {'list_path': 'data/coco/train.txt', 'batch_size': 128}, 'database': {'list_path': 'data/coco/database.txt', 'batch_size': 128}, 'test': {'list_path': 'data/coco/test.txt', 'batch_size': 128}}, data_path='./datasets/COCO2014/', dataset='coco', de_step=50, debug_steps=50, epoch=150, eval=False, eval_epoch=10, last_epoch=0, learning_rate=0.001, log_path='logs/', model='HashNet', momentum=0.9, num_class=80, num_train=10000, optimizer='SGD', output_dir='checkpoints/', pretrained=None, resize_size=256, resume=None, seed=2000, step_continuation=20, topK=5000, weight_decay=0.0005)
+2023-10-02 14:11:04,554 ----- Total # of train batch: 79
+2023-10-02 14:11:04,555 ----- Total # of test batch: 40
+2023-10-02 14:11:04,555 ----- Total # of base batch: 877
+2023-10-02 14:11:04,555 Start training from epoch 1.

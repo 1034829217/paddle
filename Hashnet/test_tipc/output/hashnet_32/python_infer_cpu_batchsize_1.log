@@ -1,0 +1,58 @@
+/home/super/public/wht/codes/paddle/hashnet/paddle_hashnet
+Namespace(batch_size=1, benchmark=True, bit=32, crop_size=224, data_path='./datasets/coco_lite/', dataset='coco_lite', img_path='./resources/COCO_val2014_000000403864.jpg', max_batch_size=16, model_dir='./log/hashnet_32/lite_train_lite_infer/norm_train_gpus_0', resize_size=256, save_path='./tipc_output/', use_gpu=False, warmup=0)
+Namespace(batch_size=1, benchmark=True, bit=32, crop_size=224, data={'train_set': {'list_path': 'data/coco_lite/train.txt', 'batch_size': 1}, 'database': {'list_path': 'data/coco_lite/database.txt', 'batch_size': 1}, 'test': {'list_path': 'data/coco_lite/test.txt', 'batch_size': 1}}, data_path='./datasets/coco_lite/', dataset='coco_lite', img_path='./resources/COCO_val2014_000000403864.jpg', max_batch_size=16, model_dir='./log/hashnet_32/lite_train_lite_infer/norm_train_gpus_0', num_class=80, resize_size=256, save_path='./tipc_output/', topK=5000, use_gpu=False, warmup=0)
+train_set 9
+test 4
+database 13
+/home/super/anaconda3/envs/paddle_wenht/lib/python3.7/site-packages/paddle/vision/transforms/functional_pil.py:36: DeprecationWarning: NEAREST is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.NEAREST or Dither.NONE instead.
+  'nearest': Image.NEAREST,
+/home/super/anaconda3/envs/paddle_wenht/lib/python3.7/site-packages/paddle/vision/transforms/functional_pil.py:37: DeprecationWarning: BILINEAR is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.BILINEAR instead.
+  'bilinear': Image.BILINEAR,
+/home/super/anaconda3/envs/paddle_wenht/lib/python3.7/site-packages/paddle/vision/transforms/functional_pil.py:38: DeprecationWarning: BICUBIC is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.BICUBIC instead.
+  'bicubic': Image.BICUBIC,
+/home/super/anaconda3/envs/paddle_wenht/lib/python3.7/site-packages/paddle/vision/transforms/functional_pil.py:39: DeprecationWarning: BOX is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.BOX instead.
+  'box': Image.BOX,
+/home/super/anaconda3/envs/paddle_wenht/lib/python3.7/site-packages/paddle/vision/transforms/functional_pil.py:40: DeprecationWarning: LANCZOS is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.LANCZOS instead.
+  'lanczos': Image.LANCZOS,
+/home/super/anaconda3/envs/paddle_wenht/lib/python3.7/site-packages/paddle/vision/transforms/functional_pil.py:41: DeprecationWarning: HAMMING is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.HAMMING instead.
+  'hamming': Image.HAMMING
+----- Load code of database from ./tipc_output/database_code_32.npy
+[2022/05/05 14:43:09] root INFO: 
+
+[2022/05/05 14:43:09] root INFO: ---------------------- Env info ----------------------
+[2022/05/05 14:43:09] root INFO:  OS_version: CentOS Linux 7
+[2022/05/05 14:43:09] root INFO:  CUDA_version: 11.1.74
+Build cuda_11.1.TC455_06.29069683_0
+[2022/05/05 14:43:09] root INFO:  CUDNN_version: None.None.None
+[2022/05/05 14:43:09] root INFO:  drivier_version: 455.23.05
+[2022/05/05 14:43:09] root INFO: ---------------------- Paddle info ----------------------
+[2022/05/05 14:43:09] root INFO:  paddle_version: 2.2.2
+[2022/05/05 14:43:09] root INFO:  paddle_commit: b031c389938bfa15e15bb20494c76f86289d77b0
+[2022/05/05 14:43:09] root INFO:  log_api_version: 1.0
+[2022/05/05 14:43:09] root INFO: ----------------------- Conf info -----------------------
+[2022/05/05 14:43:09] root INFO:  runtime_device: cpu
+[2022/05/05 14:43:09] root INFO:  ir_optim: True
+[2022/05/05 14:43:09] root INFO:  enable_memory_optim: True
+[2022/05/05 14:43:09] root INFO:  enable_tensorrt: False
+[2022/05/05 14:43:09] root INFO:  enable_mkldnn: False
+[2022/05/05 14:43:09] root INFO:  cpu_math_library_num_threads: 1
+[2022/05/05 14:43:09] root INFO: ----------------------- Model info ----------------------
+[2022/05/05 14:43:09] root INFO:  model_name: example
+[2022/05/05 14:43:09] root INFO:  precision: fp32
+[2022/05/05 14:43:09] root INFO: ----------------------- Data info -----------------------
+[2022/05/05 14:43:09] root INFO:  batch_size: 1
+[2022/05/05 14:43:09] root INFO:  input_shape: dynamic
+[2022/05/05 14:43:09] root INFO:  data_num: 1
+[2022/05/05 14:43:09] root INFO: ----------------------- Perf info -----------------------
+[2022/05/05 14:43:09] root INFO:  cpu_rss(MB): 3100.0, gpu_rss(MB): None, gpu_util: None%
+[2022/05/05 14:43:09] root INFO:  total time spent(s): 2.4716
+[2022/05/05 14:43:09] root INFO:  preprocess_time(ms): 2433.7764, inference_time(ms): 34.9579, postprocess_time(ms): 2.8317
+/home/super/anaconda3/envs/paddle_wenht/lib/python3.7/site-packages/paddle/tensor/creation.py:130: DeprecationWarning: `np.object` is a deprecated alias for the builtin `object`. To silence this warning, use `object` by itself. Doing this will not modify any behavior and is safe. 
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  if data.dtype == np.object:
+/home/super/anaconda3/envs/paddle_wenht/lib/python3.7/site-packages/auto_log/env.py:53: DeprecationWarning: distro.linux_distribution() is deprecated. It should only be used as a compatibility shim with Python's platform.linux_distribution(). Please use distro.id(), distro.version() and distro.name() instead.
+  plat = distro.linux_distribution()[0]
+/home/super/anaconda3/envs/paddle_wenht/lib/python3.7/site-packages/auto_log/env.py:54: DeprecationWarning: distro.linux_distribution() is deprecated. It should only be used as a compatibility shim with Python's platform.linux_distribution(). Please use distro.id(), distro.version() and distro.name() instead.
+  ver = distro.linux_distribution()[1]
+----- Predicted Hamm_min: 0.0
+----- Found Mateched Pic: ./datasets/coco_lite/val2014/COCO_val2014_000000403864.jpg

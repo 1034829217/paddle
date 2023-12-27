@@ -1,0 +1,32 @@
+===========================train_params===========================
+model_name:hashnet_16
+python:python3.7
+gpu_list:0
+use-gpu:True|True
+--epoch:lite_train_lite_infer=2|whole_train_whole_infer=150
+--output-dir:./output/
+--batch-size:lite_train_lite_infer=10|whole_train_whole_infer=128
+--pretrained:null
+train_model_name:model_best_16
+--data-path:./datasets/coco_lite/
+##
+trainer:norm_train
+norm_train:main_single_gpu.py --bit=16 --dataset='coco_lite' --data-path='./datasets/coco_lite/'
+##
+===========================eval_params===========================
+eval:main_single_gpu.py --eval --bit=16 --dataset='coco_lite' --data-path='./datasets/coco_lite/'
+##
+===========================infer_params===========================
+--save-inference-dir:./output/hashnet_infer/
+--pretrained:
+norm_export:export_model.py --bit=16
+##
+null:.null
+infer_export:export_model.py --bit=16
+##
+inference:deploy/inference_python/infer.py --bit=16 --dataset='coco_lite' --data-path='./datasets/coco_lite/' --save-path='./tipc_output/'
+--use-gpu:True|False
+--batch-size:1
+--model-dir:./output/hashnet_infer/
+--img-path:./resources/COCO_val2014_000000403864.jpg
+--benchmark:True

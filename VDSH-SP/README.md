@@ -3,15 +3,6 @@ The PyTorch implementation of the models and experiments of [Variational Deep Se
 
 Author: Suthee Chaidaroon and Yi Fang
 
-# Platform
-This project uses python 3.6 and pytorch 0.4
-
-# Available dataset
-- reuters, rcv1, ng20, tmc, dbpedia, agnews, yahooanswer
-
-# Prepare dataset
-We provide a script to generate the datasets in the preprocess folder. You need to download the raw datasets for TMC. 
-
 # Training and Evaluating the model
 To train the unsupervised learning model, run the following command:
 ```

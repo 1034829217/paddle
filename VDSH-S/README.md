@@ -3,9 +3,6 @@ The PyTorch implementation of the models and experiments of [Variational Deep Se
 
 Author: Suthee Chaidaroon and Yi Fang
 
-# Platform
-This project uses python 3.6 and pytorch 0.4
-
 # Available dataset
 - reuters, rcv1, ng20, tmc, dbpedia, agnews, yahooanswer
 

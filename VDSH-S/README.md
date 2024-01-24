@@ -4,18 +4,9 @@ The PyTorch implementation of the models and experiments of [Variational Deep Se
 Author: Suthee Chaidaroon and Yi Fang
 
 # Training and Evaluating the model
-To train the unsupervised learning model, run the following command:
-```
-python train_VDSH.py -d [dataset name] -g [gpu number] -b [number of bits]
-```
-
 To train the supervised learning model, run the following command:
 ```
 python train_VDSH_S.py -d [dataset name] -g [gpu number] -b [number of bits]
-```
-OR
-```
-python train_VDSH_SP.py -d [dataset name] -g [gpu number] -b [number of bits]
 ```
 
 # Bibtex

@@ -6,7 +6,6 @@ Author: Suthee Chaidaroon and Yi Fang
 # Training and Evaluating the model
 To train the supervised learning model, run the following command:
 python train_VDSH_SP.py -d [dataset name] -g [gpu number] -b [number of bits]
-```
 
 # Bibtex
 ```

@@ -7,6 +7,7 @@ Author: Suthee Chaidaroon and Yi Fang
 To train the unsupervised learning model, run the following command:
 ```
 python train_VDSH.py -d [dataset name] -g [gpu number] -b [number of bits]
+```
 
 # Bibtex
 ```

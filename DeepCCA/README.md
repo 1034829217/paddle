@@ -12,15 +12,6 @@ Most of the configuration and parameters are set based on the following paper:
 
 Weiran Wang, Raman Arora, Karen Livescu, and Jeff Bilmes. "[On Deep Multi-View Representation Learning.](http://proceedings.mlr.press/v37/wangb15.pdf)", ICML, 2015.
 
-### Prerequest
-
-* python 3.6+
-* pytorch 1.0+ (Supports for calculating the gradient of eigenvalue decomposition for symmetric matrix (symeig))
-
-You can also install the environment as the following:
-```bash
-conda env create -f requirement.yml
-conda activate deepcca
 ```
 
 ### Dataset
@@ -28,20 +19,4 @@ The model is evaluated on a noisy version of MNIST dataset. I use the dataset bu
 
 The dataset was large and could not get uploaded on GitHub. So it is uploaded on another server. You can download them from [noisymnist_view1.gz](https://www2.cs.uic.edu/~vnoroozi/noisy-mnist/noisymnist_view1.gz) and [noisymnist_view2.gz](https://www2.cs.uic.edu/~vnoroozi/noisy-mnist/noisymnist_view2.gz), or use the download_data.sh. (Thanks to @VahidooX)
 
-### Differences with the original paper
-The following are the differences between my implementation and the original paper (they are small, just same as @VahidooX's implementation):
 
- * I used RMSProp (an adaptive version of gradient descent) instead of GD with momentum. It was so much faster in converging.
- * Instead of a non-saturating version of sigmoid, I just used the standard sigmoid as the activation functions. Standard sigmoid is used in the MATLAB implementation too. It should not affect the performance significantly. However, if it is needed, it can get substituted by another non-saturating activation function like ReLU.
- * Pre-training is not done in this implementation. However, it is not clear how much it can be useful.
-
-### Other Implementations
-The following is the implementation of DCCA in keras with theano backend from which I got great help for the implementation. The codes are written by @VahidooX:
-
-* [Keras implementation](https://github.com/VahidooX/DeepCCA) from @VahidooX's github page(https://github.com/VahidooX)
-
-The following are the other implementations of DCCA in MATLAB and C++. These codes are written by the authors of the original paper:
-
-* [C++ implementation](https://homes.cs.washington.edu/~galen/files/dcca.tgz) from Galen Andrew's website (https://homes.cs.washington.edu/~galen/)
-
-* [MATLAB implementation](http://ttic.uchicago.edu/~wwang5/papers/dccae.tgz) from Weiran Wang's website (http://ttic.uchicago.edu/~wwang5/dccae.html)

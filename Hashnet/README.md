@@ -20,8 +20,6 @@ MS COCO（即 [COCO2014](https://cocodataset.org) ）
 
 - 对其中没有类别信息的图像进行剪枝后，将训练图像和验证图像相结合，得到 122218 张图像。然后随机抽取 5000 张图像作为查询集，其余用作数据库；此外,从数据库中随机抽取 10,000 张图像作为训练集。数据集处理代码详见 [utils/datasets.py](utils/datasets.py)。另外数据集分割好的list放在 [./data/coco/](./data/coco/) 路径下。
 
-- 需要**注意**的是：通过对比发现，原作者的list与第三方参考代码 [DeepHash-pytorch](https://github.com/swuxyj/DeepHash-pytorch) 中的list略有不同，不过经过测试，两种list最终跑出来精度差不多。本项目复现的时候采用与原作者一样的list。
-
 
 ## 三、快速开始
 

@@ -1,4 +1,4 @@
-#DCPH based on paddlepaddle approach
+# DCPH based on paddlepaddle approach
 
 Due to the high retrieval efficiency and low storage cost for cross-modal search tasks, cross-modal hashing methods have attracted considerable attention from the researchers. For the supervised cross-modal hashing methods, how to make the learned
 hash codes sufficiently preserve semantic information contained in the label of datapoints is the key to further enhance the retrieval performance. Hence, almost all supervised cross-modal hashing methods usually depend on defining similarities between datapoints

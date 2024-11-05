@@ -3,7 +3,10 @@ Lei Zhang, Leiting Chen, Chuan Zhou, Fan Yang, Xin Li [Exploring Graph-Structure
 ](https://doi.org/10.1145/3474085.3475567)[C], ACM International Conference on Multimedia (ACM MM), 2021: 4277–4286. (PyTorch Code)
 
 ## Training
+```
 python main.py
+```
+
 
 ## Citing GCR
 

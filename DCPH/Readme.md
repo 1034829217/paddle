@@ -5,5 +5,4 @@ This paper propose a novel cross-modal hashing method without defining the simil
 ## Training
 
 ```
-
 python CCMH_BS.py

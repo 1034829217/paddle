@@ -5,6 +5,7 @@ Lei Zhang, Leiting Chen, Chuan Zhou, Fan Yang, Xin Li [Exploring Graph-Structure
 ## Training
 ```
 python main.py
+```
 
 ## Citing GCR
 
